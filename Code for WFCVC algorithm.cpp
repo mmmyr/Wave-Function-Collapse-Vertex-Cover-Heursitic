@@ -3,6 +3,7 @@
 
 using namespace std;
 // this is ada's code
+// This is under instruction of Professor Perkins
 #define  STATUS_A 0
 #define  STATUS_Z 1
 #define  STATUS_AZ 2 
