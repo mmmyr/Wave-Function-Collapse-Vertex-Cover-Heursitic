@@ -2,7 +2,7 @@
 #include <sys/time.h>
 
 using namespace std;
-
+// this is ada's code
 #define  STATUS_A 0
 #define  STATUS_Z 1
 #define  STATUS_AZ 2 
@@ -142,12 +142,12 @@ void Observe()
 	//find the vertex with the smallest Deg, minv  
 	if(minv==0) return;	//all edges have been covered  
 	
-	for(int i=0;i<v[minv].size();i++)//±éÀúminvÕâ¸öµãËùÓÐ¸úËûÏàÁ¬µÄ±ß 
+	for(int i=0;i<v[minv].size();i++)//ï¿½ï¿½ï¿½ï¿½minvï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ 
 	{
 		for(int j=0;j<=1;j++)
 		{
 			int Edge=v[minv][i];
-			if(edge[Edge][j]==minv) //j ÊÇminv 
+			if(edge[Edge][j]==minv) //j ï¿½ï¿½minv 
 			{	
 				wave[Edge][2]=false;wave[Edge][j]=false;
 				choose[minv]=0;choose[edge[Edge][1-j]]=1;
